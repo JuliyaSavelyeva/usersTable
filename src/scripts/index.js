@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
 userElem.addEventListener('click', onShowModal);
 closeElem.addEventListener('click', onCloseModal);
 
-nameElem.addEventListener('click', e => {
-  getUsers().then(users => onSort(e, users, 'name'));
+nameElem.addEventListener('click', () => {
+  getUsers().then(users => onSort(users, 'name'));
 });
 
 usernameElem.addEventListener('click', () => {
